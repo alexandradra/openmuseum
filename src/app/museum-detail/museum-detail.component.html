@@ -14,16 +14,52 @@
             <!-- PHOTO -->
           </div>
 
-          <p class="card-text">{{museumAdress}}<br>
-          {{museumZipCode}} {{museumCity}}</p>
-          <p><a href="{{phone}}">{{museumPhone}}</a></p>
-          <p><a href="{{museumWebSite}}" target="blank">{{museumWebSite}}</a></p>
-          <p>{{museumOpening}}</p>
+          <!-- Localisation -->
+          <div class="row mb-2">
+            <div class="col-1">
+              📍
+            </div>
+            <div class="col-10">
+              <p class="card-text">
+                {{museumAdress}}<br>
+                {{museumZipCode}} {{museumCity | titlecase}}
+              </p>
+            </div>
+          </div>
+          <!-- Phone -->
+          <div class="row mb-2">
+            <div class="col-1">
+              📞
+            </div>
+            <div class="col-10">
+              <p class="card-text"><a href="{{phone}}">{{museumPhone}}</a></p>
+            </div>
+          </div>
+          <!-- Website -->
+          <div class="row mb-2">
+            <div class="col-1">
+              💻
+            </div>
+            <div class="col-10">
+              <p class="card-text">
+                <a href="{{museumWebSite}}" target="blank">{{museumWebSite}}</a>
+              </p>
+            </div>
+          </div>
+          <!-- Opening hours -->
+          <div class="row mb-2">
+            <div class="col-1">
+              🕒
+            </div>
+            <div class="col-10">
+              <p class="card-text">{{museumOpening}}</p>
+            </div>
+          </div>
 
         </div>
       </article>
-      <p>
-        <a routerLink="/">Back to museum list</a>
+      <p class="mt-3">
+        <a routerLink="/" class="text-secondary">👈 Back to museum list</a>
       </p>
     </div>
   </div>
