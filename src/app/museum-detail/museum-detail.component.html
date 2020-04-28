@@ -4,8 +4,9 @@
       <h1>🏛️ {{museumName}}</h1>
     </div>
     <div class="col-sm-3">
-      🗺️
+
       <!-- Here come the map ! 🗺️ -->
+      <app-map-museum [museumCoord]="museumCoord"></app-map-museum>
     </div>
     <div class="col-sm-9">
       <article class="card shadow-sm mb-2">
@@ -30,6 +31,15 @@
           <div class="row mb-2">
             <div class="col-1">
               📞
+            </div>
+            <div class="col-10">
+              <p class="card-text"><a href="{{phone}}">{{museumPhone}}</a></p>
+            </div>
+          </div>
+          <!-- Fax -->
+          <div class="row mb-2">
+            <div class="col-1">
+              📠
             </div>
             <div class="col-10">
               <p class="card-text"><a href="{{phone}}">{{museumPhone}}</a></p>

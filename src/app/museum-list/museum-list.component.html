@@ -9,7 +9,7 @@
 
     <app-single-museum class="col-4"
       *ngFor="let museum of museums"
-      [museumId]="museum.id"
+      [museumRef]="museum.ref_musee"
       [museumName]="museum.nom_du_musee"
       [museumAdress]="museum.adr"
       [museumZipCode]="museum.cp"
@@ -17,7 +17,7 @@
       [museumPhone]="museum.telephone"
       [museumWebSite]="museum.sitweb"
       [museumOpening]="museum.periode_ouverture">
-      </app-single-museum>
+    </app-single-museum>
 
   </div>
 </section>
