@@ -3,7 +3,8 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  apiRoute: "https://trouver.datasud.fr/dataset/54e9cb28-9ea1-4f53-85c8-bf493d2d9b85/resource/524030ad-32ce-4780-b662-54e9fe3af839/download/liste-et-localisation-des-musees-de-france.json"
 };
 
 /*
